@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gen Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Image Generator</h1>
+
+    <div class="settings">
+      <h2>API Settings</h2>
+
+      <label>API Key</label>
+      <input type="password" id="apiKey" placeholder="Enter API key" />
+
+      <label>Base URL</label>
+      <input type="text" id="baseUrl" placeholder="https://api.openai.com/v1" />
+
+      <label>Model</label>
+      <input type="text" id="model" placeholder="gpt-image-1 or other" />
+    </div>
+
+    <div class="prompt-section">
+      <h2>Prompt</h2>
+      <textarea id="prompt" placeholder="Describe the image..."></textarea>
+      <button id="generateBtn">Generate Image</button>
+    </div>
+
+    <div class="output">
+      <h2>Result</h2>
+      <div id="status"></div>
+      <img id="resultImage" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
